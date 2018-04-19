@@ -15,7 +15,7 @@ Before your tests are executed the expected response is posted to the Wiremock s
 You'll need to inspect the requests that you're application is making and record their response codes, headers & response bodies within your test projects. Do so using any number of method (Chrome tools|Charles Proxy|[...](https://alternativeto.net/software/fiddler/))
 
 
-NB. The AUT should be configured such that it will make requests to the mock service (on localhost here, but could be hosted on an external server/container). In this project to demostrate both requests through to the service and mocked requests, in reality the AUT should only be making requests to Wiremock!
+**NB.** The AUT should be configured such that it will make requests to the mock service (on localhost here, but could be hosted on an external server/container). In this project both requests through to the service and mocked requests are demostrated & tested, in reality the AUT should only be making requests to Wiremock!
 
 
 ## Usage
