@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    fetch('http://localhost:3000/api/user')
+        .then(function(response) {
+            return response.json();
+        }).then(function(response) {
+        document.getElementsByTagName('body')[0].innerHTML =
+            response.firstName + ' ' + response.surname + '<br>';
+    });
+</script>
+</body>
+</html>
