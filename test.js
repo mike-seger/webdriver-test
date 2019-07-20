@@ -7,9 +7,16 @@ describe('Can mock api responses', function () {
     let client;
     before(function () {
         this.timeout(10000);
-        client = driver.remote({
-            desiredCapabilities: {'browserName': 'chrome'}
-        });
+        client = driver.remote(
+        {
+            desiredCapabilities: {
+                'browserName': 'chrome',
+                'chromeOptions': {
+                    "args": ['--headless', '--disable-gpu', '--window-size=1280,800']
+                }
+            }
+        }
+        );
         return client.init();
     });
 
