@@ -22,7 +22,7 @@ You'll need to inspect the requests that you're application is making and record
 
 - start selenium server: `npm run selenium`
 
-- start wiremock standalone: `npm run wiremock`
+- start wiremock standalone: `npm run start:mock`
 
 - start application: `npm run server`
 
