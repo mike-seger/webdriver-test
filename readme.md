@@ -17,6 +17,13 @@ You'll need to inspect the requests that you're application is making and record
 
 **NB.** The AUT should be configured such that it will make requests to the mock service (on localhost here, but could be hosted on an external server/container). In this project both requests through to the service and mocked requests are demostrated & tested, in reality the AUT should only be making requests to Wiremock!
 
+npm install selenium-webdriver
+npm install chromedriver --chromedriver_filepath=$(pwd)/chromedriver/chromedriver_linux64.zip
+
+npm install selenium-standalone@latest -g
+selenium-standalone install && selenium-standalone start
+npm install --save-dev @babel/node
+
 
 ## Usage
 

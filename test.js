@@ -12,6 +12,7 @@ describe('Can mock api responses', function () {
             desiredCapabilities: {
                 'browserName': 'chrome',
                 'chromeOptions': {
+                    'binary': "/home/michael/git/webdriver-test/chromedriver/chromedriver",
                     "args": ['--headless', '--disable-gpu', '--window-size=1280,800']
                 }
             }
