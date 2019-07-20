@@ -14,3 +14,6 @@ npm install --save-dev @babel/node
 - start application: `npm run server`
 
 - run tests: `npm test`
+
+
+https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html
