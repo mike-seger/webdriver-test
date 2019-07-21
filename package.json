@@ -1,17 +1,17 @@
 {
-  "name": "DemoWDIOWiremock",
+  "name": "webdriver-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "selenium": "selenium-standalone start",
-    "start:mock": "wiremock --root-dir ./mock --port 5000",
+    "wiremock": "wiremock --root-dir ./mock --port 5000",
     "server": "babel-node src/server.js",
     "test": "mocha --require @babel/register test.js",
-    "test:chrome": "./testChrome.js",
+    "checkports": "node ./checkports.js 3000 4444 5000",
+    "wait4ports": "wait-on -d 1000 -t 30000 tcp:3000 tcp:4444 tcp:5000",
     "mock-kill": "kill-port 3000 4444 5000",
-    "mock-start": "npm-run-all --parallel selenium start:mock server",
-    "mock-test": "concurrently --success first --kill-others \"npm run selenium\" \"npm run start:mock\" \"npm run server\" \"npm run test\"",
+    "mock-start": "npm-run-all checkports --parallel selenium wiremock server",
     "lint": "eslint *"
   },
   "keywords": [],
@@ -27,9 +27,8 @@
     "concurrently": "^3.6.1",
     "mocha": "^6.2.0",
     "npm-run-all": "^4.1.5",
-    "superagent": "^3.8.3",
-    "superagent-promise-plugin": "^3.2.0",
-    "webdriverio": "^4.14.4",
+    "kill-port": "1.5.1",
+    "portscanner": "2.2.0",
     "wiremock-standalone": "^2.23.2-1"
   },
   "dependencies": {
@@ -40,8 +39,8 @@
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.18.2",
     "express": "^4.17.1",
-    "kill-port": "1.5.1",
     "logger": "0.0.1",
+    "wait-on": "3.3.0",
     "selenium-webdriver": "^4.0.0-alpha.4"
   }
 }

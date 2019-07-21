@@ -8,12 +8,16 @@ npm install --save-dev @babel/node
 ## Usage
 
 - start selenium server: `npm run selenium`
-
 - start wiremock standalone: `npm run start:mock`
-
 - start application: `npm run server`
-
 - run tests: `npm test`
 
+## Run amd test all
+```
+./runall.sh
+```
 
+## Links
 https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html
+https://www.npmjs.com/package/superagent
+https://www.npmjs.com/package/superagent-promise
