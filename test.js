@@ -1,8 +1,8 @@
 import assert from 'assert';
 
+require('chromedriver');
 const {Builder, By, Key, until} = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
-require('chromedriver');
  
 describe('Can mock api responses', function () {
     var driver;

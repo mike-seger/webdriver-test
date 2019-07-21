@@ -1,10 +1,8 @@
 ## Install chromedriver
-npm install selenium-webdriver  
-npm install chromedriver --chromedriver_filepath=$(pwd)/chromedriver/chromedriver_xxx.zip
-selenium-standalone install --singleDriverInstall=chrome  
+sudo npm i -g selenium-standalone
+sudo selenium-standalone install
 
 ## Usage
-
 - start selenium server: `npm run selenium`
 - start wiremock standalone: `npm run wiremock`
 - start application: `npm run server`
@@ -16,6 +14,6 @@ selenium-standalone install --singleDriverInstall=chrome
 ```
 
 ## Links
-https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html
-https://www.npmjs.com/package/superagent
-https://www.npmjs.com/package/superagent-promise
+https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html  
+https://www.npmjs.com/package/superagent  
+https://www.npmjs.com/package/superagent-promise  
