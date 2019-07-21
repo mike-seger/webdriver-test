@@ -6,7 +6,7 @@ sudo selenium-standalone install
 - start selenium server: `npm run selenium`
 - start wiremock standalone: `npm run wiremock`
 - start application: `npm run server`
-- run tests: `npm test`
+- run tests: `npm run test`
 
 ## Run and test all
 ```
