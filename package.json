@@ -11,7 +11,7 @@
     "checkports": "node ./checkports.js 3000 4444 5000",
     "wait4ports": "wait-on -d 1000 -t 30000 tcp:3000 tcp:4444 tcp:5000",
     "mock-kill": "kill-port 3000 4444 5000",
-    "mock-start": "npm-run-all checkports --parallel selenium wiremock server",
+    "mock-start": "npm-run-all --parallel selenium wiremock server",
     "lint": "eslint *"
   },
   "keywords": [],
@@ -25,22 +25,22 @@
     "@babel/register": "^7.5.5",
     "assert": "^1.5.0",
     "concurrently": "^3.6.1",
+    "kill-port": "1.5.1",
     "mocha": "^6.2.0",
     "npm-run-all": "^4.1.5",
-    "kill-port": "1.5.1",
     "portscanner": "2.2.0",
+    "selenium-standalone": "^6.16.0",
     "wiremock-standalone": "^2.23.2-1"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.19.0",
     "chromedriver": "^75.1.0",
-    "chromium": "^2.1.1",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.18.2",
     "express": "^4.17.1",
     "logger": "0.0.1",
-    "wait-on": "3.3.0",
-    "selenium-webdriver": "^4.0.0-alpha.4"
+    "selenium-webdriver": "^4.0.0-alpha.4",
+    "wait-on": "3.3.0"
   }
 }
