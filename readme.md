@@ -1,3 +1,8 @@
+## Install chromedriver
+npm install selenium-webdriver  
+npm install chromedriver --chromedriver_filepath=$(pwd)/chromedriver/chromedriver_xxx.zip
+selenium-standalone install --singleDriverInstall=chrome  
+
 ## Usage
 
 - start selenium server: `npm run selenium`
