@@ -1,4 +1,4 @@
-## Install chromedriver
+## Install Selenium globally, including drivers
 sudo npm i -g selenium-standalone  
 sudo selenium-standalone install
 
