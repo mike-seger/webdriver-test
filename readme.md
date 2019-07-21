@@ -1,5 +1,5 @@
 ## Install chromedriver
-sudo npm i -g selenium-standalone
+sudo npm i -g selenium-standalone  
 sudo selenium-standalone install
 
 ## Usage
