@@ -6,7 +6,7 @@ sudo selenium-standalone install
 - start selenium server: `npm run selenium`
 - start wiremock standalone: `npm run wiremock`
 - start application: `npm run server`
-- run tests: `npm test`
+- run tests: `npm run test`
 
 ## Run and test all
 ```
@@ -17,3 +17,5 @@ sudo selenium-standalone install
 https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html  
 https://www.npmjs.com/package/superagent  
 https://www.npmjs.com/package/superagent-promise  
+https://medium.com/@dbillinghamuk/mocking-a-websites-rest-api-to-run-functional-tests-using-wiremock-994c95328a94
+
